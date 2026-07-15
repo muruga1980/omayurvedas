@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>108 Knowledge Library | Ancient Ayurvedic Wisdom Collection</title>
+    <meta name="description" content="Explore the 108 Knowledge Library at Om Ayurveda. Discover curated collections of 108 Asanas, Herbs, Cosmetics, Drinks, Health Essentials, Homas, Mantras, Retreats, Ayurvedic Dishes, Upanishads, and more." />
+    <meta name="keywords" content="108 knowledge library, 108 asanas, 108 herbs, Ayurvedic wisdom, Vedic knowledge, Ayurveda collection, holistic wellness library" />
+    <link rel="canonical" href="https://www.omayurveda.org/108-knowledge-library.html" />
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1e3d2a">
+    <meta name="msapplication-TileColor" content="#1e3d2a">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.omayurveda.org/108-knowledge-library.html" />
+    <meta property="og:title" content="108 Knowledge Library | Ancient Ayurvedic Wisdom Collection" />
+    <meta property="og:description" content="Explore the 108 Knowledge Library at Om Ayurveda. Discover curated collections of ancient Ayurvedic and Vedic wisdom." />
+    <meta property="og:image" content="https://www.omayurveda.org/assets/img/og-image.jpg" />
+    <meta property="og:site_name" content="Om Ayurveda" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.omayurveda.org/108-knowledge-library.html" />
+    <meta name="twitter:title" content="108 Knowledge Library | Ancient Ayurvedic Wisdom Collection" />
+    <meta name="twitter:description" content="Explore the 108 Knowledge Library at Om Ayurveda. Discover curated collections of ancient Ayurvedic and Vedic wisdom." />
+    <meta name="twitter:image" content="https://www.omayurveda.org/assets/img/og-image.jpg" />
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="assets/img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <style>
+        /* 108 Knowledge Library Card Styles */
+        .knowledge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .knowledge-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .knowledge-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+        .knowledge-card-image {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+        }
+        .knowledge-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        .knowledge-card:hover .knowledge-card-image img {
+            transform: scale(1.1);
+        }
+        .knowledge-card-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--secondary);
+            color: var(--primary-dark);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            z-index: 2;
+        }
+        .knowledge-card-content {
+            padding: 1.8rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .knowledge-card-content h3 {
+            font-size: 1.3rem;
+            color: var(--primary-dark);
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .knowledge-card-content p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            flex: 1;
+            margin-bottom: 1.2rem;
+        }
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--primary);
+            color: var(--white);
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            transition: var(--transition);
+            border: 2px solid var(--primary);
+            text-align: center;
+        }
+        .btn-download:hover {
+            background: transparent;
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .btn-download .material-icons-round {
+            font-size: 20px;
+        }
+        @media (max-width: 768px) {
+            .knowledge-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <span class="material-icons-round">keyboard_arrow_up</span>
+    </button>
+
+    <!-- WhatsApp Float Button -->
+    <button class="whatsapp-float" id="whatsappFloat" aria-label="Chat on WhatsApp">
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm5.18 13.87c-.23.64-1.15 1.18-1.63 1.27-.42.08-.96.12-1.54-.04-.36-.1-.82-.26-1.38-.51-2.42-1.05-4-3.67-4.12-3.84-.12-.17-.99-1.33-.99-2.53 0-1.2.62-1.79.86-2.03.23-.24.51-.3.68-.3.17 0 .34 0 .49.01.16.01.37-.06.58.45.21.51.72 1.76.79 1.89.07.12.12.26.02.42-.1.17-.15.27-.3.42-.15.15-.31.32-.44.43-.15.13-.3.27-.14.53.16.26.72 1.19 1.54 1.92 1.06.95 1.96 1.25 2.24 1.39.28.14.45.12.62-.07.17-.19.72-.84.91-1.13.19-.28.38-.24.64-.14.26.1 1.67.79 1.96.93.29.14.47.2.53.32.07.12.07.66-.16 1.32z"/></svg>
+    </button>
+    <!-- WhatsApp Popup Overlay -->
+    <div class="whatsapp-popup-overlay" id="whatsappPopupOverlay"></div>
+    <!-- WhatsApp Popup -->
+    <div class="whatsapp-popup" id="whatsappPopup">
+        <div class="whatsapp-popup-header">
+            <div class="whatsapp-popup-avatar">
+                <span class="material-icons-round">spa</span>
+            </div>
+            <div class="whatsapp-popup-info">
+                <h4>Om Ayurveda</h4>
+                <span><span class="status-dot"></span> Typically replies within minutes</span>
+            </div>
+            <button class="whatsapp-popup-close" id="whatsappPopupClose" aria-label="Close WhatsApp popup">
+                <span class="material-icons-round">close</span>
+            </button>
+        </div>
+        <div class="whatsapp-popup-body">
+            <div class="whatsapp-message-bubble">
+                <p>🙏 Namaste! Welcome to Om Ayurveda. How can we assist you on your wellness journey today?</p>
+                <span class="bubble-time">Now</span>
+            </div>
+            <a href="https://wa.me/917904218828?text=Namaste!%20I%20would%20like%20to%20know%20more%20about%20Om%20Ayurveda%20services." class="whatsapp-popup-cta" id="whatsappStartChat" target="_blank" rel="noopener noreferrer">
+                <span class="material-icons-round">chat</span>
+                Start Chat
+            </a>
+        </div>
+        <div class="whatsapp-popup-footer">
+            <p>Powered by Om Ayurveda Wellness</p>
+        </div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+            </div>
+            <div class="top-bar-right">
+                <a href="tel:+91-7904218828">
+                    <span class="material-icons-round">phone</span>
+                    +91 79042 18828
+                </a>
+                <a href="tel:+91-9405225604">
+                    <span class="material-icons-round">phone_iphone</span>
+                    +91 94052 25604
+                </a>
+                <a href="https://www.facebook.com/omayurvedahealth" target="_blank" title="Facebook">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@omayurvedahealth" target="_blank" title="YouTube">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55A3.016 3.016 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.376.55 9.376.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/omayurvedahealth" target="_blank" title="Instagram">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">
+                    <img src="assets/img/logo.svg" alt="Logo" title="OmAyurveda" />
+                </div>
+                <div class="logo-text">
+                    OmAyurveda
+                    <span>Authentic Healing</span>
+                </div>
+            </a>
+            <!-- Mobile Cart Icon -->
+            <a href="cart.html" class="mobile-cart-icon" id="mobileCartIcon" aria-label="Shopping cart">
+                <span class="material-icons-round">add_shopping_cart</span>
+                <span class="cart-count hidden" id="mobileCartCount">0</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="material-icons-round">menu</span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="has-submenu">
+                    <a href="ayurveda.html" class="active">
+                        Ayurveda
+                        <span class="material-icons-round">expand_more</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="ayurveda.html"><span class="material-icons-round">grass</span>  Our Approach</a></li>
+                        <li><a href="classes.html"><span class="material-icons-round">live_tv</span> Online Ayurveda Classes</a></li>                        
+                        <li><a href="108-knowledge-library.html"><span class="material-icons-round">library_books</span> 108 Knowledge Library</a></li>
+						<li><a href="gallery.html"><span class="material-icons-round">photo_library</span> Gallery </a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">Traditional Services</a></li>
+                <li><a href="retreat.html"> Wellness Retreat</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                    <a href="cart.html" class="nav-cart-btn" id="navCartBtn">
+                        <span class="material-icons-round">add_shopping_cart</span>
+                        Cart
+                        <span class="cart-count hidden" id="navCartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 55vh;">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container" style="grid-template-columns: 1fr; text-align: center; padding-top: 120px;">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-badge">
+                    <span class="material-icons-round">auto_stories</span>
+                    Sacred Wisdom Collection
+                </div>
+                <h1>108 Knowledge <em>Library</em></h1>
+                <p>A curated treasury of ancient Ayurvedic and Vedic wisdom — 108 sacred offerings across twelve timeless categories to guide your holistic journey.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 108 Knowledge Library Section -->
+    <section class="section" style="background: var(--light);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Sacred Collections</span>
+                <h2>Explore the Twelve Paths of Wisdom</h2>
+                <p>Each collection holds 108 carefully selected gems of knowledge, practice, and devotion — downloadable as PDF guides for your personal journey.</p>
+            </div>
+
+            <div class="knowledge-grid">
+                <!-- Card 1: 108 Asanas -->
+                <div class="knowledge-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="knowledge-card-image">
+                        <img src="assets/img/108/asanas.jpg" alt="108 Asanas Collection">
+                        <span class="knowledge-card-badge">108 Items</span>
+                    </div>
+                    <div class="knowledge-card-content">
+                        <h3>🧘 108 Asanas</h3>
+                        <p>Discover a complete guide to 108 classical yoga postures rooted in Ayurvedic principles. Each asana is described with its doshic effects, contraindications, and therapeutic benefits for body-mind harmony.</p>
+                        <a href="assets/img/108/108-asanas.pdf" class="btn-download" download>
+                            <span class="material-icons-round">download</span>
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: 108 Herbs -->
+                <div class="knowledge-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="knowledge-card-image">
+                        <img src="assets/img/108/herbs.jpg" alt="108 Herbs Collection">
+                        <span class="knowledge-card-badge">108 Items</span>
+                    </div>
+                    <div class="knowledge-card-content">
+                        <h3>🌿 108 Herbs</h3>
+                        <p>An encyclopedic collection of 108 medicinal herbs used in classical Ayurveda. Includes botanical profiles, rasa-virya-vipaka, therapeutic uses, and traditional formulations for natural healing.</p>
+                        <a href="assets/img/108/108-herbs.pdf" class="btn-download" download>
+                            <span class="material-icons-round">download</span>
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: 108 Cosmetics -->
+                <div class="knowledge-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="knowledge-card-image">
+                        <img src="assets/img/108/cosmetics.jpg" alt="108 Cosmetics Collection">
+                        <span class="knowledge-card-badge">108 Items</span>
+                    </div>
+                    <div class="knowledge-card-content">
+                        <h3>💄 108 Cosmetics</h3>
+                        <p>Traditional Ayurvedic beauty secrets with 108 natural cosmetic recipes. Learn to prepare herbal face packs, hair oils, ubtans, and rejuvenating therapies using kitchen ingredients and forest botanicals.</p>
+                        <a href="assets/img/108/108-cosmetics.pdf" class="btn-download" download>
+                            <span class="material-icons-round">download</span>
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4: 108 Drinks -->
+                <div class="knowledge-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="knowledge-card-image">
+                        <img src="assets/img/108/drinks.jpg" alt="108 Drinks Collection">
+                        <span class="knowledge-card-badge">108 Items</span>
+                    </div>
+                    <div class="knowledge-card-content">
+                        <h3>🥤 108 Drinks</h3>
+                        <p>A refreshing collection of 108 Ayurvedic beverages including herbal teas, medicinal kadhas, rejuvenating tonics, and seasonal sharbat recipes designed to balance your doshas deliciously.</p>
+                        <a href="assets/img/108/108-drinks.pdf" class="btn-download" download>
+                            <span class="material-icons-round">download</span>
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5: 108 Health Essentials -->
+                <div class="knowledge-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="knowledge-card-image">
+                        <img src="assets/img/108/health-essentials.jpg" alt="108 Health Essentials Collection">
+                        <span class="knowledge-card-badge">108 Items</span>
+                    </div>
+                    <div class="knowledge-card-content">
+                        <h3>❤️ 108 Health Essentials</h3>
+                        <p>Core Ayurvedic health wisdom with 108 essential practices for daily living. Covers Dinacharya, Ritucharya, immunity boosters, detox protocols, and disease-prevention guidelines for modern life.</p>
+                        <a href="assets/img/108/108-health-essentials.pdf" class="btn-download" download>
+                            <span class="material-icons-round">download</span>
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 6: 108 Homas -->
+                <div class="knowledge-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="knowledge-card-image">
+                        <img src="assets/img/108/homas.jpg" alt="108 Homas Collection">
+                        <span class="knowledge-card-badge">108 Items</span>
+                    </div>
+                    <div class="knowledge-card-content">
+                        <h3>🔥 108 Homas</h3>
+                        <p>Sacred fire rituals decoded — 108 homas with their mantras, ingredients, planetary associations, and spiritual purposes. A practical guide to performing authentic Vedic ceremonies for healing and prosperity.</p>
+                        <a href="assets/img/108/108-homas.pdf" class="btn-download" download>
+                            <span class="material-icons-round">download</span>
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 7: 108 Mantras -->
+                <div class="knowledge-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="knowledge-card-image">
+                        <img src="assets/img/108/mantras.jpg" alt="108 Mantras Collection">
+                        <span class="knowledge-card-badge">108 Items</span>
+                    </div>
+                    <div class="knowledge-card-content">
+                        <h3>🕉️ 108 Mantras</h3>
+                        <p>A treasury of 108 powerful Sanskrit mantras with transliteration, meaning, and usage guidelines. Includes seed mantras, healing mantras, and meditation mantras for spiritual growth and mental peace.</p>
+                        <a href="assets/img/108/108-mantras.pdf" class="btn-download" download>
+                            <span class="material-icons-round">download</span>
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 8: 108 Divine Mantras -->
+                <div class="knowledge-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="knowledge-card-image">
+                        <img src="assets/img/108/divine-mantras.jpg" alt="108 Divine Mantras Collection">
+                        <span class="knowledge-card-badge">108 Items</span>
+                    </div>
+                    <div class="knowledge-card-content">
+                        <h3>✨ 108 Divine Mantras</h3>
+                        <p>Celestial invocations for divine connection — 108 rare and powerful mantras dedicated to various deities, planets, and cosmic forces. Includes Nyasa, Dhyana, and detailed Sadhana procedures.</p>
+                        <a href="assets/img/108/108-divine-mantras.pdf" class="btn-download" download>
+                            <span class="material-icons-round">download</span>
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 9: 108 Retreats -->
+                <div class="knowledge-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="knowledge-card-image">
+                        <img src="assets/img/108/retreats.jpg" alt="108 Retreats Collection">
+                        <span class="knowledge-card-badge">108 Items</span>
+                    </div>
+                    <div class="knowledge-card-content">
+                        <h3>🌄 108 Retreats</h3>
+                        <p>Transformative wellness retreat concepts from around the world — 108 curated retreat themes, itineraries, and healing programs combining Ayurveda, Yoga, Meditation, and nature immersion.</p>
+                        <a href="assets/img/108/108-retreats.pdf" class="btn-download" download>
+                            <span class="material-icons-round">download</span>
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 10: 108 Tridoshic Ayurvedic Dishes -->
+                <div class="knowledge-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="knowledge-card-image">
+                        <img src="assets/img/108/tridoshic-dishes.jpg" alt="108 Tridoshic Ayurvedic Dishes Collection">
+                        <span class="knowledge-card-badge">108 Items</span>
+                    </div>
+                    <div class="knowledge-card-content">
+                        <h3>🍲 108 Tridoshic Ayurvedic Dishes</h3>
+                        <p>Balance all three doshas with 108 wholesome recipes. From breakfast to dinner, these tridoshic dishes are designed to nourish every constitution while delighting your taste buds with authentic flavors.</p>
+                        <a href="assets/img/108/108-tridoshic-dishes.pdf" class="btn-download" download>
+                            <span class="material-icons-round">download</span>
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 11: 108 Upanishads -->
+                <div class="knowledge-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="knowledge-card-image">
+                        <img src="assets/img/108/upanishads.jpg" alt="108 Upanishads Collection">
+                        <span class="knowledge-card-badge">108 Items</span>
+                    </div>
+                    <div class="knowledge-card-content">
+                        <h3>📖 108 Upanishads</h3>
+                        <p>Journey through the essence of Vedic philosophy with summaries and key teachings from 108 Upanishads. Ancient wisdom made accessible for seekers exploring the nature of self, consciousness, and liberation.</p>
+                        <a href="assets/img/108/108-upanishads.pdf" class="btn-download" download>
+                            <span class="material-icons-round">download</span>
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 12: 108 Ways to Transform -->
+                <div class="knowledge-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="knowledge-card-image">
+                        <img src="assets/img/108/ways-to-transform.jpg" alt="108 Ways to Transform Collection">
+                        <span class="knowledge-card-badge">108 Items</span>
+                    </div>
+                    <div class="knowledge-card-content">
+                        <h3>🌟 108 Ways to Transform</h3>
+                        <p>Practical wisdom for personal evolution — 108 actionable ways to transform your body, mind, relationships, and spiritual practice. Small shifts that create profound, lasting change in everyday life.</p>
+                        <a href="assets/img/108/108-ways-to-transform.pdf" class="btn-download" download>
+                            <span class="material-icons-round">download</span>
+                            Download PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--primary-dark); color: var(--white); text-align: center;">
+        <div class="container">
+            <div data-aos="fade-up">
+                <h2 style="font-size: clamp(1.8rem, 3vw, 2.5rem); color: var(--white); margin-bottom: 1rem;">Begin Your Journey Into <em style="color: var(--secondary);">Sacred Knowledge</em></h2>
+                <p style="color: rgba(255,255,255,0.75); max-width: 600px; margin: 0 auto 2rem; font-size: 1.05rem;">Download the collections that resonate with your path and integrate ancient wisdom into your modern wellness practice.</p>
+                <a href="contact.html" class="btn-primary">
+                    <span class="material-icons-round">mail</span>
+                    Request Custom Collection
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon"><img src="assets/img/logo-footer.svg" alt="Logo" title="OmAyurveda" /></div>
+                        <div class="logo-text">OmAyurveda</div>
+                    </div>
+                    <p>Authentic Ayurveda for Body, Mind & Spirit. Restoring health naturally through personalized treatments and Vedic wisdom in Rishikesh, India.</p>
+                    <div class="contact-info-footer">
+                        <a href="tel:+91-7904218828"><span class="material-icons-round">phone</span> +91 79042 18828</a>
+                        <a href="tel:+91-9405225604"><span class="material-icons-round">chat</span> +91 94052 25604</a>
+                        <a href="mailto:info@omayurveda.org"><span class="material-icons-round">email</span> info@omayurveda.org</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><span class="material-icons-round">arrow_right</span> Home</a></li>
+                        <li><a href="about.html"><span class="material-icons-round">arrow_right</span> About Us</a></li>
+                        <li><a href="ayurveda.html"><span class="material-icons-round">arrow_right</span> Ayurveda</a></li>
+                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Traditional Services</a></li>
+                        <li><a href="retreat.html"><span class="material-icons-round">arrow_right</span> Wellness Retreat</a></li>
+                        <li><a href="products.html"><span class="material-icons-round">arrow_right</span> Products</a></li>
+                        <li><a href="classes.html"><span class="material-icons-round">arrow_right</span> Online Classes</a></li>
+                        <li><a href="payment.html"><span class="material-icons-round">arrow_right</span> Payment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Nadi Pariksha</a></li>
+                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Panchakarma</a></li>
+                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Abhyanga</a></li>
+                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Shirodhara</a></li>
+                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Basti</a></li>
+                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Nasya</a></li>
+                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Swedana</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect With Us</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/omayurvedahealth" target="_blank"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></li>
+                        <li><a href="https://www.youtube.com/@omayurvedahealth" target="_blank"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55A3.016 3.016 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.376.55 9.376.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg> YouTube</a></li>
+                        <li><a href="https://www.instagram.com/omayurvedahealth" target="_blank"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OmAyurveda. All rights reserved.</p>
+                <p>Designed with <span class="material-icons-round" style="font-size: 14px; color: var(--secondary); vertical-align: middle;">favorite</span> in kpm, India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

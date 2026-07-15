@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Secure Ayurveda Service Booking</title>
+    <meta name="description" content="Complete your booking with secure payment options at Om Ayurveda. Pay for Panchakarma treatments, consultations, courses, and Ayurvedic products safely." />
+    <meta name="keywords" content="Ayurveda payment, book Panchakarma online, Ayurvedic service booking, secure payment, wellness consultation payment" />
+    <link rel="canonical" href="https://www.omayurveda.org/payment.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.omayurveda.org/payment.html" />
+    <meta property="og:title" content="Payment | Secure Ayurveda Service Booking" />
+    <meta property="og:description" content="Complete your booking with secure payment options at Om Ayurveda. Pay for Panchakarma treatments, consultations, courses, and Ayurvedic products safely." />
+	<meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1e3d2a">
+    <meta name="msapplication-TileColor" content="#1e3d2a">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:image" content="https://www.omayurveda.org/assets/img/og-image.jpg" />
+    <meta property="og:site_name" content="Om Ayurveda" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.omayurveda.org/payment.html" />
+    <meta name="twitter:title" content="Payment | Secure Ayurveda Service Booking" />
+    <meta name="twitter:description" content="Complete your booking with secure payment options at Om Ayurveda. Pay for Panchakarma treatments, consultations, courses, and Ayurvedic products safely." />
+    <meta name="twitter:image" content="https://www.omayurveda.org/assets/img/og-image.jpg" />
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="assets/img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+   <style>
+        /* Payment page enhancements */
+        .order-summary-box {
+            background: #ffffff;
+            border: 2px solid var(--primary, #5a7c5a);
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .order-summary-box h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            color: var(--primary-dark, #3d5c3d);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .order-summary-box .total-amount {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary-dark, #3d5c3d);
+            font-family: 'Jost', sans-serif;
+            margin: 0.5rem 0;
+        }
+        .shipping-info-box {
+            background: #fff8e1;
+            border-left: 4px solid #f39c12;
+            padding: 1rem 1.25rem;
+            border-radius: 0 12px 12px 0;
+            margin: 1rem 0;
+            font-family: 'Jost', sans-serif;
+            font-size: 0.9rem;
+            color: #7d6608;
+            text-align: left;
+        }
+        .shipping-info-box .material-icons-round {
+            vertical-align: middle;
+            margin-right: 6px;
+            font-size: 18px;
+        }
+        .cart-items-list {
+            text-align: left;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px dashed var(--primary, #5a7c5a);
+        }
+        .cart-items-list h4 {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.95rem;
+            color: var(--primary-dark, #3d5c3d);
+            margin-bottom: 0.75rem;
+        }
+        .cart-item-mini {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--text-light, #6b7280);
+            font-family: 'Jost', sans-serif;
+        }
+        .cart-item-mini span:first-child {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .cart-item-mini .qty-badge {
+            background: var(--primary, #5a7c5a);
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        /* Cart icon in nav */
+        .nav-cart-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary, #5a7c5a);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            margin-left: 8px;
+            position: relative;
+        }
+        .nav-cart-btn:hover {
+            background: var(--primary-dark, #3d5c3d);
+            transform: translateY(-1px);
+        }
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: #c0392b;
+            color: white;
+            font-size: 11px;
+            font-weight: 700;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Jost', sans-serif;
+            border: 2px solid white;
+        }
+        .cart-count.hidden {
+            display: none;
+        }
+
+        .back-to-cart {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary, #5a7c5a);
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 1.5rem;
+            transition: all 0.3s;
+        }
+        .back-to-cart:hover {
+            color: var(--primary-dark, #3d5c3d);
+            transform: translateX(-4px);
+        }
+   </style>
+</head><body>
+
+   <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+            </div>
+            <div class="top-bar-right">
+
+                <a href="tel:+91-7904218828">
+                    <span class="material-icons-round">phone</span>
+                    +91 79042 18828
+                </a>
+                <a href="tel:+91-9405225604">
+                    <span class="material-icons-round">phone_iphone</span>
+                    +91 94052 25604
+                </a>
+
+                <a href="https://www.facebook.com/omayurvedahealth" target="_blank" title="Facebook">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@omayurvedahealth" target="_blank" title="YouTube">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55A3.016 3.016 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.376.55 9.376.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/omayurvedahealth" target="_blank" title="Instagram">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">
+					<img src="assets/img/logo.svg" alt="Logo" title="OmAyurveda" />
+				</div>
+                <div class="logo-text">
+                    OmAyurveda
+                    <span>Authentic Healing</span>
+                </div>
+            </a>
+			<!-- Mobile Cart Icon — outside hamburger menu, left of the toggle -->
+            <a href="cart.html" class="mobile-cart-icon" id="mobileCartIcon" aria-label="Shopping cart">
+                <span class="material-icons-round">add_shopping_cart</span>
+                <span class="cart-count hidden" id="mobileCartCount">0</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="material-icons-round">menu</span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+               
+				<li class="has-submenu">
+                    <a href="ayurveda.html">
+                      Ayurveda
+                        <span class="material-icons-round">expand_more</span>
+                    </a>
+                    <ul class="submenu">
+						<li><a href="ayurveda.html"><span class="material-icons-round">grass</span>  Our Approach</a></li>
+						<li><a href="classes.html"><span class="material-icons-round">live_tv</span> Online Ayurveda Classes</a></li>						
+						<li><a href="108-knowledge-library.html"><span class="material-icons-round">library_books</span> 108 Knowledge Library</a></li>
+						<li><a href="gallery.html"><span class="material-icons-round">photo_library</span> Gallery </a></li>						
+                    </ul>
+                </li> 
+				<li><a href="services.html">Traditional Services</a></li>
+				 <li><a href="retreat.html"> Wellness Retreat</a></li>
+ 				<li><a href="products.html">Products</a></li>           
+                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                    <a href="cart.html" class="nav-cart-btn" id="navCartBtn">
+                        <span class="material-icons-round">add_shopping_cart</span>
+                        Cart
+                        <span class="cart-count hidden" id="navCartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Payment Section -->
+    <section class="payment-section">
+        <div class="payment-container">
+            <div class="payment-card" data-aos="fade-up">
+                <div class="payment-icon">
+                    <span class="material-icons-round">payment</span>
+                </div>
+                <h2>Complete Your Payment</h2>
+                <p>Thank you for choosing OmAyurveda. Please use any of the following payment methods to complete your purchase.</p>
+
+                <!-- Order Summary Box -->
+                <div class="order-summary-box" data-aos="fade-up" data-aos-delay="50">
+                    <h3>
+                        <span class="material-icons-round">receipt_long</span>
+                        Order Summary
+                    </h3>
+                    <div id="cartItemsList" class="cart-items-list"></div>
+                    <div class="total-amount" id="totalAmountDisplay">Rs. 0</div>
+                    <div style="font-size: 0.9rem; color: var(--text-light, #6b7280); font-family: 'Jost', sans-serif;">
+                        Total Amount for Selected Items
+                    </div>
+                </div>
+
+                <!-- Shipping Info Box -->
+                <div class="shipping-info-box" data-aos="fade-up" data-aos-delay="100">
+                    <span class="material-icons-round">local_shipping</span>
+                    <strong>Excluding Transport Charges</strong> — Shipping is done through Indian Post. Transport charges will be calculated separately based on your location and added to the final bill. Our team will contact you with the exact shipping cost after order confirmation.
+                </div>
+
+                <div class="payment-methods">
+                    <!-- Google Pay -->
+                    <div class="payment-method" data-aos="fade-up" data-aos-delay="100">
+                        <div class="payment-method-header">
+                            <span class="material-icons-round">account_balance_wallet</span>
+                            <h4>Google Pay</h4>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Mobile Number</span>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span class="detail-value" id="gpay-number">+91 94052 25604</span>
+                                <button class="copy-btn" onclick="copyToClipboard('gpay-number', this)">
+                                    <span class="material-icons-round" style="font-size: 14px;">content_copy</span> Copy
+                                </button>
+                            </div>
+                        </div>
+						<p style="margin-top: 10px; font-size: 0.85rem; color: var(--text-muted);">Open Google Pay app and send payment to this number.</p>
+                        <div style="margin-top: 1rem; text-align: center;">
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">Or scan the QR code to pay instantly</p>
+                            <img src="assets/img/payment-qr-code.jpeg" alt="Google Pay QR Code" style="max-width: 220px; width: 100%; border-radius: 12px; border: 2px solid var(--light-2); box-shadow: var(--shadow-sm);">
+                        </div>
+                        
+                    </div>
+
+                    <!-- UPI -->
+                    <div class="payment-method" data-aos="fade-up" data-aos-delay="200">
+                        <div class="payment-method-header">
+                            <span class="material-icons-round">qr_code</span>
+                            <h4>UPI Payment</h4>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">UPI ID</span>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span class="detail-value" id="upi-id">bestcare1008-1@oksbi</span>
+                                <button class="copy-btn" onclick="copyToClipboard('upi-id', this)">
+                                    <span class="material-icons-round" style="font-size: 14px;">content_copy</span> Copy
+                                </button>
+                            </div>
+                        </div>
+                        <p style="margin-top: 10px; font-size: 0.85rem; color: var(--text-muted);">Use any UPI app (PhonePe, Paytm, GPay, etc.) to send payment to this UPI ID.</p>
+                    </div>
+
+                    <!-- Bank Transfer -->
+                    <div class="payment-method" data-aos="fade-up" data-aos-delay="300">
+                        <div class="payment-method-header">
+                            <span class="material-icons-round">account_balance</span>
+                            <h4>Bank Account Transfer</h4>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Account Holder Name</span>
+                            <span class="detail-value">Satchidananda Saraswati</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Bank Name</span>
+                            <span class="detail-value">Bank of Baroda</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Account Number</span>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span class="detail-value" id="account-number">25000100008517</span>
+                                <button class="copy-btn" onclick="copyToClipboard('account-number', this)">
+                                    <span class="material-icons-round" style="font-size: 14px;">content_copy</span> Copy
+                                </button>
+                            </div>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">IFSC Code</span>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span class="detail-value" id="ifsc-code">BARB0RISHIK</span>
+                                <button class="copy-btn" onclick="copyToClipboard('ifsc-code', this)">
+                                    <span class="material-icons-round" style="font-size: 14px;">content_copy</span> Copy
+                                </button>
+                            </div>
+                        </div>
+						 <p style="margin-top: 10px; font-size: 0.85rem; color: var(--text-muted);">Note: Fifth character of IFSC code is zero (0)</p>
+						   <div class="detail-row">
+                            <span class="detail-label">Branch</span>
+                            <span class="detail-value">Rishikesh,India</span>
+                        </div>
+						<div class="detail-row">
+                            <span class="detail-label">SWIFT Code </span>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span class="detail-value" id="swift-code">BARBINBBDEH</span>
+                                <button class="copy-btn" onclick="copyToClipboard('swift-code', this)">
+                                    <span class="material-icons-round" style="font-size: 14px;">content_copy</span> Copy
+                                </button>
+                            </div>
+                        </div>
+						
+                      
+                       
+                    </div>
+                </div>
+
+                <div class="payment-note">
+                    <p>
+                        <span class="material-icons-round">info</span>
+                        After making the payment, please share the screenshot or transaction ID via WhatsApp to +91  7904218828 for confirmation.
+                    </p>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/917904218828?text=I%20have%20made%20a%20payment.%20Please%20find%20the%20screenshot%20attached.%20Thank%20you!" target="_blank" class="btn-whatsapp large" style="width: 100%;">
+                        <span class="material-icons-round">chat</span>
+                        Share Payment Screenshot on WhatsApp
+                    </a>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="cart.html" class="back-to-cart">
+                        <span class="material-icons-round">arrow_back</span>
+                        Back to Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon"><img src="assets/img/logo-footer.svg" alt="Logo" title="OmAyurveda" /></div>
+                        <div class="logo-text">OmAyurveda</div>
+                    </div>
+                    <p>Authentic Ayurveda for Body, Mind & Spirit. Restoring health naturally through personalized treatments and Vedic wisdom in Rishikesh, India.</p>
+                    <div class="contact-info-footer">
+                        <a href="tel:+91-7904218828"><span class="material-icons-round">phone</span> +91 79042 18828</a>
+                        <a href="tel:+91-9405225604"><span class="material-icons-round">chat</span> +91 94052 25604</a>
+                        <a href="mailto:info@omayurveda.org"><span class="material-icons-round">email</span> info@omayurveda.org</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><span class="material-icons-round">arrow_right</span> Home</a></li>
+                        <li><a href="about.html"><span class="material-icons-round">arrow_right</span> About Us</a></li>
+                        <li><a href="ayurveda.html"><span class="material-icons-round">arrow_right</span> Ayurveda</a></li>
+                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Traditional Services</a></li>
+						 <li><a href="retreat.html"><span class="material-icons-round">arrow_right</span> Wellness Retreat</a></li>                       
+                        <li><a href="products.html"><span class="material-icons-round">arrow_right</span> Products</a></li>
+						 <li><a href="classes.html"><span class="material-icons-round">arrow_right</span> Online Classes</a></li>                       
+						 <li><a href="payment.html"><span class="material-icons-round">arrow_right</span> Payment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Nadi Pariksha</a></li>
+                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Panchakarma</a></li>
+                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Abhyanga</a></li>
+                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Shirodhara</a></li>
+						<li><a href="services.html"><span class="material-icons-round">arrow_right</span> Basti</a></li>
+						<li><a href="services.html"><span class="material-icons-round">arrow_right</span> Nasya</a></li>
+						<li><a href="services.html"><span class="material-icons-round">arrow_right</span> Swedana</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect With Us</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/omayurvedahealth" target="_blank"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></li>
+                        <li><a href="https://www.youtube.com/@omayurvedahealth" target="_blank"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55A3.016 3.016 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.376.55 9.376.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg> YouTube</a></li>
+                        <li><a href="https://www.instagram.com/omayurvedahealth" target="_blank"><svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OmAyurveda. All rights reserved.</p>
+                <p>Designed with <span class="material-icons-round" style="font-size: 14px; color: var(--secondary); vertical-align: middle;">favorite</span> in kpm, India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script src="assets/js/script.js"></script>
+   
+    <!-- WhatsApp Float Button -->
+    <button class="whatsapp-float" id="whatsappFloat" aria-label="Chat on WhatsApp">
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm5.18 13.87c-.23.64-1.15 1.18-1.63 1.27-.42.08-.96.12-1.54-.04-.36-.1-.82-.26-1.38-.51-2.42-1.05-4-3.67-4.12-3.84-.12-.17-.99-1.33-.99-2.53 0-1.2.62-1.79.86-2.03.23-.24.51-.3.68-.3.17 0 .34 0 .49.01.16.01.37-.06.58.45.21.51.72 1.76.79 1.89.07.12.12.26.02.42-.1.17-.15.27-.3.42-.15.15-.31.32-.44.43-.15.13-.3.27-.14.53.16.26.72 1.19 1.54 1.92 1.06.95 1.96 1.25 2.24 1.39.28.14.45.12.62-.07.17-.19.72-.84.91-1.13.19-.28.38-.24.64-.14.26.1 1.67.79 1.96.93.29.14.47.2.53.32.07.12.07.66-.16 1.32z"/></svg>
+    </button>
+    <!-- WhatsApp Popup Overlay -->
+    <div class="whatsapp-popup-overlay" id="whatsappPopupOverlay"></div>
+    <!-- WhatsApp Popup -->
+    <div class="whatsapp-popup" id="whatsappPopup">
+        <div class="whatsapp-popup-header">
+            <div class="whatsapp-popup-avatar">
+                <span class="material-icons-round">spa</span>
+            </div>
+            <div class="whatsapp-popup-info">
+                <h4>Om Ayurveda</h4>
+                <span><span class="status-dot"></span> Typically replies within minutes</span>
+            </div>
+            <button class="whatsapp-popup-close" id="whatsappPopupClose" aria-label="Close WhatsApp popup">
+                <span class="material-icons-round">close</span>
+            </button>
+        </div>
+        <div class="whatsapp-popup-body">
+            <div class="whatsapp-message-bubble">
+                <p>🙏 Namaste! Welcome to Om Ayurveda. How can we assist you on your wellness journey today?</p>
+                <span class="bubble-time">Now</span>
+            </div>
+            <a href="https://wa.me/917904218828?text=Namaste!%20I%20would%20like%20to%20know%20more%20about%20Om%20Ayurveda%20services." class="whatsapp-popup-cta" id="whatsappStartChat" target="_blank" rel="noopener noreferrer">
+                <span class="material-icons-round">chat</span>
+                Start Chat
+            </a>
+        </div>
+        <div class="whatsapp-popup-footer">
+            <p>Powered by Om Ayurveda Wellness</p>
+        </div>
+    </div>
+</body>
+</html>
