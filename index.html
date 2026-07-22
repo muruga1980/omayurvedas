@@ -178,25 +178,47 @@
             </button>
 
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-
+                <li><a href="index.html" class="active"> Home</a></li>
+                <li><a href="about.html">About</a></li>
 				<li class="has-submenu">
-                    <a href="ayurveda.html">
-                      Ayurveda
+					<a href="ayurveda.html">
+					  Ayurveda
+						<span class="material-icons-round">expand_more</span>
+					</a>
+					<ul class="submenu">
+						<li><a href="ayurveda.html"><span class="material-icons-round">grass</span>  Our Approach</a></li>
+						<li><a href="classes.html"><span class="material-icons-round">live_tv</span> Online Ayurveda Classes</a></li>
+						<li><a href="gallery.html"><span class="material-icons-round">photo_library</span> Gallery </a></li>
+					</ul>
+				</li>			
+				                <li class="has-mega-menu">
+                    <a href="treatment.html" >
+                        Treatment
                         <span class="material-icons-round">expand_more</span>
                     </a>
-                    <ul class="submenu">
-						<li><a href="ayurveda.html"><span class="material-icons-round">grass</span>  Our Approach</a></li>
-						<li><a href="classes.html"><span class="material-icons-round">live_tv</span> Online Ayurveda Classes</a></li>						
-						<li><a href="108-knowledge-library.html"><span class="material-icons-round">library_books</span> 108 Knowledge Library</a></li>
-						<li><a href="gallery.html"><span class="material-icons-round">photo_library</span> Gallery </a></li>
-                    </ul>
+                    <div class="mega-menu">
+                        <div class="mega-menu-grid">
+                            <div class="mega-menu-header">Our Treatments</div>
+            <a href="treatment-shirodhara.html" class="mega-menu-item"><div class="mega-icon"><span class="material-icons-round">water_drop</span></div><span>Shirodhara</span></a>
+            <a href="treatment-abhyanga.html" class="mega-menu-item"><div class="mega-icon"><span class="material-icons-round">spa</span></div><span>Abhyanga</span></a>
+            <a href="treatment-nasya.html" class="mega-menu-item"><div class="mega-icon"><span class="material-icons-round">face</span></div><span>Nasya</span></a>
+            <a href="treatment-basti.html" class="mega-menu-item"><div class="mega-icon"><span class="material-icons-round">local_florist</span></div><span>Basti</span></a>
+            <a href="treatment-virechan.html" class="mega-menu-item"><div class="mega-icon"><span class="material-icons-round">healing</span></div><span>Virechan</span></a>
+            <a href="treatment-vaman.html" class="mega-menu-item"><div class="mega-icon"><span class="material-icons-round">psychology</span></div><span>Vaman</span></a>
+            <a href="treatment-udvartan.html" class="mega-menu-item"><div class="mega-icon"><span class="material-icons-round">invert_colors</span></div><span>Udvartan</span></a>
+            <a href="treatment-swedana.html" class="mega-menu-item"><div class="mega-icon"><span class="material-icons-round">hot_tub</span></div><span>Swedana</span></a>
+            <a href="treatment-janu-basti.html" class="mega-menu-item"><div class="mega-icon"><span class="material-icons-round">accessibility</span></div><span>Janu Basti</span></a>
+            <a href="treatment-rakta-mokshan.html" class="mega-menu-item"><div class="mega-icon"><span class="material-icons-round">vaccines</span></div><span>Rakta Mokshan</span></a>
+            <a href="treatment-agnikarma.html" class="mega-menu-item"><div class="mega-icon"><span class="material-icons-round">local_fire_department</span></div><span>Agnikarma</span></a>
+            <a href="treatment-tarpan.html" class="mega-menu-item"><div class="mega-icon"><span class="material-icons-round">visibility</span></div><span>Tarpan</span></a>
+
+                        </div>
+                    </div>
                 </li>
-				<li><a href="services.html">Traditional Services</a></li>
-				 <li><a href="retreat.html"> Wellness Retreat</a></li>
+				 <li><a href="retreat.html">Retreat</a></li>
+				 <li><a href="108-knowledge-library.html">Knowledge Hub</a></li>
  				<li><a href="products.html">Products</a></li>           
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li>
                     <a href="cart.html" class="nav-cart-btn" id="navCartBtn">
                         <span class="material-icons-round">add_shopping_cart</span>
@@ -221,7 +243,7 @@
                 <h1>Authentic Ayurveda for <em>Body, Mind & Spirit</em></h1>
                 <p>Restoring health naturally through personalized treatments, lifestyle guidance, and Vedic wisdom in the sacred heart of Rishikesh.</p>
                 <div class="hero-buttons">
-                    <a href="services.html" class="btn-primary">
+                    <a href="treatment.html" class="btn-primary">
                         <span class="material-icons-round">explore</span>
                         Explore Healing
                     </a>
@@ -301,48 +323,48 @@
                 <p>Experience authentic healing through time-tested therapies personalized to your unique constitution and health needs.</p>
             </div>
             <div class="services-grid">
-                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0" onclick="window.location.href='treatment-shirodhara.html';">
                     <div class="service-number">01</div>
                     <div class="service-card-image">
-                        <img src="assets/img/home/nadi-pariksha.webp?w=400&q=80" alt="Nadi Pariksha">
+                        <img src="assets/img/treatment/shirodhara.jpg" alt="shirodhara">
                         <div class="service-card-overlay">
-                            <span><span class="material-icons-round">monitor_heart</span> Pulse Diagnosis</span>
+                            <span><span class="material-icons-round">monitor_heart</span> Shirodhara</span>
                         </div>
                     </div>
                     <div class="service-card-content">
-                        <h3>Nadi Pariksha</h3>
-                        <p>Traditional Ayurvedic pulse diagnosis to understand your doshas, health imbalances, and precise treatment needs through ancient Vedic wisdom.</p>
+                        <h3>Shirodhara</h3>
+                        <p>Shirodhara is a profoundly calming Ayurvedic therapy where a continuous stream of warm, medicated oil is gently poured over the forehead, specifically targeting the third eye area. This ancient healing practice induces a deep state of relaxation, balances the nervous system, and harmonizes the mind-body connection.</p>
                     </div>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100" onclick="window.location.href='treatment-abhyanga.html';">
                     <div class="service-number">02</div>
                     <div class="service-card-image">
-                        <img src="assets/img/home/personalizedPanchakarma.webp?w=400&q=80" alt="personalized Panchakarma">
+                        <img src="assets/img/treatment/abhyanga.jpg" alt="abhyanga">
                         <div class="service-card-overlay">
-                            <span><span class="material-icons-round">spa</span> Deep Detox</span>
+                            <span><span class="material-icons-round">spa</span> Abhyanga</span>
                         </div>
                     </div>
                     <div class="service-card-content">
-                        <h3>Personalized Panchakarma</h3>
-                        <p>A complete detox program designed to cleanse, balance, and rejuvenate your entire system based on your individual prakriti.</p>
+                        <h3>Abhyanga</h3>
+                        <p>Abhyanga is a traditional Ayurvedic full-body massage using warm, herbal-infused oils tailored to your unique constitution (dosha). This nourishing therapy involves rhythmic, synchronized strokes that penetrate deep into the tissues, promoting detoxification, rejuvenation, and overall vitality.</p>
                     </div>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200" onclick="window.location.href='treatment-swedana.html';">
                     <div class="service-number">03</div>
                     <div class="service-card-image">
-                        <img src="assets/img/home/abhyanga.webp?w=400&q=80" alt="Abhyanga">
+                        <img src="assets/img/treatment/swedana.jpg" alt="Swedana">
                         <div class="service-card-overlay">
-                            <span><span class="material-icons-round">water_drop</span> Oil Therapy</span>
+                            <span><span class="material-icons-round">water_drop</span> Stream Therapy</span>
                         </div>
                     </div>
                     <div class="service-card-content">
-                        <h3>Abhyanga (Oil Massage)</h3>
-                        <p>Warm herbal oils applied with rhythmic strokes to remove toxins, improve circulation, calm the mind, and restore vitality.</p>
+                        <h3>Swedana </h3>
+                        <p>Swedana is a traditional Ayurvedic steam therapy that induces therapeutic sweating to eliminate toxins through the skin. Using herbal decoctions in a steam chamber or localized steam application, this treatment opens the pores, liquefies toxins, and prepares the body for deeper cleansing therapies.</p>
                     </div>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up">
-                <a href="services.html" class="btn-primary">
+                <a href="treatment.html" class="btn-primary">
                     <span class="material-icons-round">arrow_forward</span>
                     View All Services
                 </a>
@@ -838,23 +860,24 @@
                         <li><a href="index.html"><span class="material-icons-round">arrow_right</span> Home</a></li>
                         <li><a href="about.html"><span class="material-icons-round">arrow_right</span> About Us</a></li>
                         <li><a href="ayurveda.html"><span class="material-icons-round">arrow_right</span> Ayurveda</a></li>
-                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Traditional Services</a></li>
-						 <li><a href="retreat.html"><span class="material-icons-round">arrow_right</span> Wellness Retreat</a></li>                       
+                        <li><a href="treatment.html"><span class="material-icons-round">arrow_right</span>  Treatment</a></li>
+                        <li><a href="retreat.html"><span class="material-icons-round">arrow_right</span> Wellness Retreat</a></li>
+						<li><a href="108-knowledge-library.html"><span class="material-icons-round">arrow_right</span> 108 Knowledge Library</a></li>
                         <li><a href="products.html"><span class="material-icons-round">arrow_right</span> Products</a></li>
-						 <li><a href="classes.html"><span class="material-icons-round">arrow_right</span> Online Classes</a></li>                       
-						 <li><a href="payment.html"><span class="material-icons-round">arrow_right</span> Payment</a></li>
+                        <li><a href="classes.html"><span class="material-icons-round">arrow_right</span> Online Classes</a></li>
+                        <li><a href="payment.html"><span class="material-icons-round">arrow_right</span> Payment</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Services</h4>
+                    <h4>Treatment</h4>
                     <ul>
-                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Nadi Pariksha</a></li>
-                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Panchakarma</a></li>
-                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Abhyanga</a></li>
-                        <li><a href="services.html"><span class="material-icons-round">arrow_right</span> Shirodhara</a></li>
-						<li><a href="services.html"><span class="material-icons-round">arrow_right</span> Basti</a></li>
-						<li><a href="services.html"><span class="material-icons-round">arrow_right</span> Nasya</a></li>
-						<li><a href="services.html"><span class="material-icons-round">arrow_right</span> Swedana</a></li>
+                        <li><a href="treatment-shirodhara.html"><span class="material-icons-round">arrow_right</span> Shirodhara</a></li>
+                        <li><a href="treatment-abhyanga.html"><span class="material-icons-round">arrow_right</span> Abhyanga</a></li>
+                        <li><a href="treatment-nasya.html"><span class="material-icons-round">arrow_right</span> Nasya</a></li>
+                        <li><a href="treatment-basti.html"><span class="material-icons-round">arrow_right</span> Basti</a></li>
+						<li><a href="treatment-virechan.html"><span class="material-icons-round">arrow_right</span> Virechan</a></li>
+						<li><a href="treatment-vaman.html"><span class="material-icons-round">arrow_right</span> Vaman</a></li>
+						<li><a href="treatment-swedana.html"><span class="material-icons-round">arrow_right</span> Swedana</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
